@@ -60,3 +60,33 @@ if __name__ == "__main__":
     # Continuous log monitoring loop
     print("Starting log monitoring...")
     monitor_log_file()
+
+
+
+
+
+
+**Explanation**
+This Python script continuously monitors a specified log file for new entries, performs basic log analysis, and generates summary reports. It uses the tail command to track and display new log entries in real-time and implements a mechanism to stop the monitoring loop using Ctrl+C.
+
+**Prerequisites**
+Python 3.x
+Linux or macOS system (for tail command support).
+
+**Usage**
+Clone the repository or download the script file (log_monitor.py).
+Make sure the log file you want to monitor exists and is accessible.
+Open a terminal and navigate to the directory containing the log_monitor.py script.
+Run the script using the following command:  **python log_monitor.py**
+The script will start monitoring the specified log file and display new log entries in real-time. Press Ctrl+C to stop the monitoring process.
+
+**Log Analysis**
+The script performs basic log analysis by counting occurrences of specific keywords or patterns in the log entries.
+Customize the KEYWORDS list in the script to specify the keywords or patterns you want to analyze.
+                            
+1.monitor_log_file() function continuously monitors the specified log file using the tail -F command through subprocess. It reads and prints new log entries in real-time.
+2.When the user interrupts the process (e.g., using Ctrl+C), the KeyboardInterrupt exception is caught, and the monitoring loop is stopped gracefully by terminating the subprocess.
+3.signal_handler() function handles the Ctrl+C signal and exits the script gracefully.
+4.Make the script executable using the command chmod +x log_monitor.sh.
+5.Run the script using ./log_monitor.sh.
+6.This script continuously displays new log entries from the specified log file in real-time. Pressing Ctrl+C stops the monitoring loop.
