@@ -1,3 +1,5 @@
+![PythonScript2](https://github.com/Kal07yan/PythonScript/assets/104569755/c42c54d2-da25-45ee-a597-5a445984593e)
+![PythonScript1](https://github.com/Kal07yan/PythonScript/assets/104569755/16e60864-2ff3-4d76-a13c-014e60b02bb9)
 # PythonScript
 import subprocess
 import signal
